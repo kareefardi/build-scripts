@@ -9,3 +9,4 @@ m4
 python3-pip
 tcl-dev
 tk-dev
+wget

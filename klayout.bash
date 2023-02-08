@@ -1,4 +1,4 @@
-!#/bin/env bash
+#!/bin/env bash
 
 sudo apt install -y $(cat ./dependencies.txt)
 

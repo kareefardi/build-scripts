@@ -1,5 +1,5 @@
 #!/bin/env bash
-#
+
 set -eux
 
 dependencies=($(cat ./dependencies.txt))
