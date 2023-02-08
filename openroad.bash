@@ -17,6 +17,9 @@ sudo rm -rf /etc/ld.so.conf.d/or_tools.conf
 sudo bash -c "echo '$HOME/or-tools_x86_64_Ubuntu-22.04_cpp_v9.5.2237/lib' > /etc/ld.so.conf.d/or_tools.conf"
 sudo ldconfig
 
+new_path='export PATH=$PATH:$HOME/or-tools_x86_64_Ubuntu-22.04_cpp_v9.5.2237/bin'
+grep -qxF "$new_path" $HOME/.bashrc || echo "$new_path" >> $HOME/.bashrc
+
 git clone https://github.com/The-OpenROAD-Project/OpenROAD ${HOME}/openroad --depth=1 --recursive
 cd ${HOME}/openroad
 
