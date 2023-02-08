@@ -7,7 +7,7 @@ sudo apt install -y python3-pip
 pip3 install volare
 
 
-latest=$(python3 -c "print($($HOME/.local/volare ls-remote)[0])")
+latest=$(python3 -c "print($($HOME/.local/bin/volare ls-remote)[0])")
 
 bash -c "$HOME/.local/bin/volare enable ${latest} --pdk-root $HOME/pdks"
 
