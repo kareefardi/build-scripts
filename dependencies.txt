@@ -10,8 +10,8 @@ libbison-dev
 libboost-all-dev
 libcairo2-dev
 libgl-dev
+libspdlog-dev
 libx11-dev
-lipspdlog-dev
 m4
 python3-pip
 swig
