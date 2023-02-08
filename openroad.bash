@@ -21,6 +21,7 @@ git clone https://github.com/The-OpenROAD-Project/OpenROAD ${HOME}/openroad --de
 cd ${HOME}/openroad
 
 mkdir build
+cd build
 cmake ..
 make -j$(nproc)
 sudo make install
