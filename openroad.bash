@@ -14,7 +14,7 @@ wget https://github.com/google/or-tools/releases/download/v9.5/${or_tools_tar} -
 tar xvf ${HOME}/${or_tools_tar} -C ${HOME}/
 
 sudo rm -rf /etc/ld.so.conf.d/or_tools.conf
-sudo bash -c "echo '$HOME/or-tools_x86_64_Ubuntu-22.10_cpp_v9.5.2237/lib' > /etc/ld.so.conf.d/or_tools.conf"
+sudo bash -c "echo '$HOME/or-tools_x86_64_Ubuntu-22.04_cpp_v9.5.2237/lib' > /etc/ld.so.conf.d/or_tools.conf"
 sudo ldconfig
 
 git clone https://github.com/The-OpenROAD-Project/OpenROAD ${HOME}/openroad --depth=1 --recursive
