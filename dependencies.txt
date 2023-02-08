@@ -1,0 +1,11 @@
+build-essential
+csh
+freeglut3-dev
+git
+libcairo2-dev
+libgl-dev
+libx11-dev
+m4
+python3-pip
+tcl-dev
+tk-dev

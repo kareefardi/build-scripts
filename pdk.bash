@@ -2,10 +2,11 @@
 #
 set -eux
 
-sudo apt install -y python3-pip
+dependencies=($(cat ./dependencies.txt))
+
+sudo apt install -y ${dependencies[@]}
 
 pip3 install volare
-
 
 latest=$(python3 -c "print($($HOME/.local/bin/volare ls-remote)[0])")
 
